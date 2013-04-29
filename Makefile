@@ -49,7 +49,7 @@ DEPENDS+=	simh-[0-9]*:../../emulators/simh
 DEPENDS+=	xli-[0-9]*:../../graphics/xli
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
-DEPENDS+=	rabbit-[0-9]*:../../graphics/rabbit
+DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
