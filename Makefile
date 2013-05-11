@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20130423
+REVISION=	20130511
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -54,8 +54,8 @@ DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
-# not in pkgsrc https://gist.github.com/tsutsui/5379077
-#DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
+DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
+DEPENDS+=	aview-[0-9]*:../../graphics/aview
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince
