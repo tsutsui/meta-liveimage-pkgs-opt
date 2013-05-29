@@ -28,6 +28,10 @@ DEPENDS+=	icewm-[0-9]*:../../wm/icewm
 DEPENDS+=	subversion-base-[0-9]*:../../devel/subversion-base
 DEPENDS+=	fossil-[0-9]*:../../devel/fossil
 
+# admin tools
+DEPENDS+=	sudo-[0-9]*:../../security/sudo
+DEPENDS+=	rsync-[0-9]*:../../net/rsync
+
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
