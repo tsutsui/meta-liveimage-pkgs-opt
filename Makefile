@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20130529
+REVISION=	20130705
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -68,6 +68,9 @@ DEPENDS+=	aview-[0-9]*:../../graphics/aview
 DEPENDS+=	evince-[0-9]*:../../print/evince
 DEPENDS+=	epdfview-[0-9]*:../../print/epdfview
 
+# documents
+DEPENDS+=	${PYPKGPREFIX}-sphinx-[0-9]*:../../textproc/py-sphinx
+
 # office
 DEPENDS+=	openoffice3-[0-9]*:../../misc/openoffice3
 
@@ -77,5 +80,6 @@ DEPENDS+=	openoffice3-[0-9]*:../../misc/openoffice3
 
 META_PACKAGE=	yes
 
+.include "../../lang/python/pyversion.mk"
 .include "../../lang/ruby/rubyversion.mk"
 .include "../../mk/bsd.pkg.mk"
