@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20130705
+REVISION=	20140101
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -25,15 +25,29 @@ DEPENDS+=	fvwm-[0-9]*:../../wm/fvwm
 DEPENDS+=	icewm-[0-9]*:../../wm/icewm
 
 # fonts
+DEPENDS+=	jisx0212fonts-[0-9]*:../../fonts/jisx0213fonts
 DEPENDS+=	jisx0213fonts-[0-9]*:../../fonts/jisx0213fonts
+DEPENDS+=	ipaexfont-[0-9]*:../../fonts/ipaexfont
 
 # scm
 DEPENDS+=	subversion-base-[0-9]*:../../devel/subversion-base
 DEPENDS+=	fossil-[0-9]*:../../devel/fossil
+DEPENDS+=	mercurial-[0-9]*:../../devel/mercurial
 
-# admin tools
+# pkgtools
+DEPENDS+=	pkgdiff-[0-9]*:../../pkgtools/pkgdiff
+DEPENDS+=	pkglint-[0-9]*:../../pkgtools/pkglint
+DEPENDS+=	pkg_rolling-replace-[0-9]*:../../pkgtools/pkg_rolling-replace
+
+# admin
 DEPENDS+=	sudo-[0-9]*:../../security/sudo
+
+# tools
+DEPENDS+=	bvi-[0-9]*:../../editors/bvi
+
+# network
 DEPENDS+=	rsync-[0-9]*:../../net/rsync
+DEPENDS+=	samba-[0-9]*:../../net/samba
 
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
@@ -54,13 +68,15 @@ DEPENDS+=	simh-[0-9]*:../../emulators/simh
 
 # graphics
 DEPENDS+=	xli-[0-9]*:../../graphics/xli
+DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
-DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
+DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
+DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
 
@@ -70,9 +86,11 @@ DEPENDS+=	epdfview-[0-9]*:../../print/epdfview
 
 # documents
 DEPENDS+=	${PYPKGPREFIX}-sphinx-[0-9]*:../../textproc/py-sphinx
+DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 
 # office
-DEPENDS+=	openoffice3-[0-9]*:../../misc/openoffice3
+#DEPENDS+=	openoffice3-[0-9]*:../../misc/openoffice3
+DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
 
 # restricted
 #DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
