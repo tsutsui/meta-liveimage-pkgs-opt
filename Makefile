@@ -25,7 +25,7 @@ DEPENDS+=	fvwm-[0-9]*:../../wm/fvwm
 DEPENDS+=	icewm-[0-9]*:../../wm/icewm
 
 # fonts
-DEPENDS+=	jisx0212fonts-[0-9]*:../../fonts/jisx0213fonts
+DEPENDS+=	jisx0212fonts-[0-9]*:../../fonts/jisx0212fonts
 DEPENDS+=	jisx0213fonts-[0-9]*:../../fonts/jisx0213fonts
 DEPENDS+=	ipaexfont-[0-9]*:../../fonts/ipaexfont
 
