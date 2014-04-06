@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20140101
+REVISION=	20140405
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -18,6 +18,7 @@ DEPENDS+=	ibus-anthy-[0-9]*:../../inputmethod/ibus-anthy
 # uim
 DEPENDS+=	uim-[0-9]*:../../inputmethod/uim
 DEPENDS+=	uim-elisp-[0-9]*:../../inputmethod/uim-elisp
+DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc
 
 # wm
 DEPENDS+=	awesome-[0-9]*:../../wm/awesome
@@ -43,7 +44,10 @@ DEPENDS+=	pkg_rolling-replace-[0-9]*:../../pkgtools/pkg_rolling-replace
 DEPENDS+=	sudo-[0-9]*:../../security/sudo
 
 # tools
+DEPENDS+=	nkf-[0-9]*:../../converters/nkf
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
+DEPENDS+=	nano-[0-9]*:../../editors/nano
+DEPENDS+=	vim-[0-9]*:../../editors/vim
 
 # network
 DEPENDS+=	rsync-[0-9]*:../../net/rsync
@@ -79,6 +83,9 @@ DEPENDS+=	w3m-[0-9]*:../../www/w3m
 DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
+
+# for ruby-twitter https access
+DEPENDS+=	mozilla-rootcert-[0-9]*:../../security/mozilla-rootcert
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince
