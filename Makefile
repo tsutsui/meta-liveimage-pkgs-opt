@@ -85,7 +85,7 @@ DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
 
 # for ruby-twitter https access
-DEPENDS+=	mozilla-rootcert-[0-9]*:../../security/mozilla-rootcert
+DEPENDS+=	mozilla-rootcerts-[0-9]*:../../security/mozilla-rootcerts
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince
