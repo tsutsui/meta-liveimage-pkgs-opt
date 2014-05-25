@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20140405
+REVISION=	20140524
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -9,6 +9,11 @@ DISTFILES=	# empty
 
 MAINTAINER=	tsutsui@NetBSD.org
 COMMENT=	Meta-package of optional binaries for the teokure live image
+
+# multimedia
+DEPENDS+=	gnash-[0-9]*:../../multimedia/gnash
+DEPENDS+=	alsa-utils-[0-9]*:../../audio/alsa-utils
+DEPENDS+=	alsa-plugins-oss-[0-9]*:../../audio/alsa-plugins-oss
 
 # inputmethod
 #  anthy
@@ -46,6 +51,7 @@ DEPENDS+=	sudo-[0-9]*:../../security/sudo
 # tools
 DEPENDS+=	nkf-[0-9]*:../../converters/nkf
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
+DEPENDS+=	gedit-[0-9]*:../../editors/gedit
 DEPENDS+=	nano-[0-9]*:../../editors/nano
 DEPENDS+=	vim-[0-9]*:../../editors/vim
 
@@ -81,11 +87,7 @@ DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 DEPENDS+=	sl-[0-9]*:../../games/sl
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
 DEPENDS+=	curl-[0-9]*:../../www/curl
-DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
-
-# for ruby-twitter https access
-DEPENDS+=	mozilla-rootcerts-[0-9]*:../../security/mozilla-rootcerts
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince
@@ -96,7 +98,6 @@ DEPENDS+=	${PYPKGPREFIX}-sphinx-[0-9]*:../../textproc/py-sphinx
 DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 
 # office
-#DEPENDS+=	openoffice3-[0-9]*:../../misc/openoffice3
 DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
 
 # restricted
