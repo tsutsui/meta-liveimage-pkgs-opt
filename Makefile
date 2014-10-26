@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20140524
+REVISION=	20141012
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -14,6 +14,7 @@ COMMENT=	Meta-package of optional binaries for the teokure live image
 DEPENDS+=	gnash-[0-9]*:../../multimedia/gnash
 DEPENDS+=	alsa-utils-[0-9]*:../../audio/alsa-utils
 DEPENDS+=	alsa-plugins-oss-[0-9]*:../../audio/alsa-plugins-oss
+DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 
 # inputmethod
 #  anthy
@@ -78,6 +79,7 @@ DEPENDS+=	simh-[0-9]*:../../emulators/simh
 
 # graphics
 DEPENDS+=	xli-[0-9]*:../../graphics/xli
+DEPENDS+=	libsixel-[0-9]*:../../graphics/libsixel
 DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
@@ -88,6 +90,10 @@ DEPENDS+=	sl-[0-9]*:../../games/sl
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
 DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
+#  for sayaka (PHP twitter client)
+DEPENDS+=	${PHP_PKG_PREFIX}-pdo-[0-9]*:../../databases/php-pdo_sqlite
+DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
+DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince
@@ -106,6 +112,7 @@ DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
 
 META_PACKAGE=	yes
 
+.include "../../lang/php/phpversion.mk"
 .include "../../lang/python/pyversion.mk"
 .include "../../lang/ruby/rubyversion.mk"
 .include "../../mk/bsd.pkg.mk"
