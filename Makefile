@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20141012
+REVISION=	20141230
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -35,6 +35,11 @@ DEPENDS+=	icewm-[0-9]*:../../wm/icewm
 DEPENDS+=	jisx0212fonts-[0-9]*:../../fonts/jisx0212fonts
 DEPENDS+=	jisx0213fonts-[0-9]*:../../fonts/jisx0213fonts
 DEPENDS+=	ipaexfont-[0-9]*:../../fonts/ipaexfont
+DEPENDS+=	freefont-ttf-[0-9]*:../../fonts/freefont-ttf
+DEPENDS+=	takao-fonts-ttf-[0-9]*:../../fonts/takao-fonts-ttf
+# for ricty
+DEPENDS+=	inconsolata-ttf-[0-9]*:../../fonts/inconsolata-ttf
+DEPENDS+=	migu-ttf-[0-9]*:../../fonts/migu-ttf
 
 # scm
 DEPENDS+=	subversion-base-[0-9]*:../../devel/subversion-base
@@ -51,6 +56,9 @@ DEPENDS+=	sudo-[0-9]*:../../security/sudo
 
 # tools
 DEPENDS+=	nkf-[0-9]*:../../converters/nkf
+DEPENDS+=	cdrtools-[0-9]*:../../sysutils/cdrtools
+
+# editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
 DEPENDS+=	gedit-[0-9]*:../../editors/gedit
 DEPENDS+=	nano-[0-9]*:../../editors/nano
@@ -109,6 +117,7 @@ DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
 # restricted
 #DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 #DEPENDS+=	xv-[0-9]*:../../graphics/xv
+#DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
 
 META_PACKAGE=	yes
 
