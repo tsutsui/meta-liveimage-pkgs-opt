@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20141230
+REVISION=	20150111
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -67,6 +67,8 @@ DEPENDS+=	vim-[0-9]*:../../editors/vim
 # network
 DEPENDS+=	rsync-[0-9]*:../../net/rsync
 DEPENDS+=	samba-[0-9]*:../../net/samba
+DEPENDS+=	wget-[0-9]*:../../net/wget
+DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
 
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
@@ -114,10 +116,12 @@ DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 # office
 DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
 
-# restricted
-#DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
-#DEPENDS+=	xv-[0-9]*:../../graphics/xv
-#DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
+# RESTRICTED packages (NO_BIN_ON_FTP etc.)
+#  These binary packages should be excluded on rsync xfers
+DEPENDS+=	adobe-flash-plugin11-[0-9]*:../../multimedia/adobe-flash-plugin11
+DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
+DEPENDS+=	xv-[0-9]*:../../graphics/xv
+DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
 
 META_PACKAGE=	yes
 
