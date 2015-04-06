@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20150111
+REVISION=	20150406
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -15,6 +15,7 @@ DEPENDS+=	gnash-[0-9]*:../../multimedia/gnash
 DEPENDS+=	alsa-utils-[0-9]*:../../audio/alsa-utils
 DEPENDS+=	alsa-plugins-oss-[0-9]*:../../audio/alsa-plugins-oss
 DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
+DEPENDS+=	lame-[0-9]*:../../audio/lame
 
 # inputmethod
 #  anthy
@@ -25,6 +26,9 @@ DEPENDS+=	ibus-anthy-[0-9]*:../../inputmethod/ibus-anthy
 DEPENDS+=	uim-[0-9]*:../../inputmethod/uim
 DEPENDS+=	uim-elisp-[0-9]*:../../inputmethod/uim-elisp
 DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc
+# wnn
+DEPENDS+=	ja-FreeWnn-lib-[0-9]*:../../inputmethod/ja-freewnn-lib
+DEPENDS+=	ja-FreeWnn-server-[0-9]*:../../inputmethod/ja-freewnn-server
 
 # wm
 DEPENDS+=	awesome-[0-9]*:../../wm/awesome
@@ -61,14 +65,24 @@ DEPENDS+=	cdrtools-[0-9]*:../../sysutils/cdrtools
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
 DEPENDS+=	gedit-[0-9]*:../../editors/gedit
+DEPENDS+=	leafpad-[0-9]*:../../editors/leafpad
 DEPENDS+=	nano-[0-9]*:../../editors/nano
 DEPENDS+=	vim-[0-9]*:../../editors/vim
 
 # network
+DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	rsync-[0-9]*:../../net/rsync
 DEPENDS+=	samba-[0-9]*:../../net/samba
 DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
+
+# browser
+DEPENDS+=	webkit-gtk-[0-9]*:../../www/webkit-gtk
+DEPENDS+=	dillo-[0-9]*:../../www/dillo
+DEPENDS+=	midori-[0-9]*:../../www/midori
+DEPENDS+=	w3m-[0-9]*:../../www/w3m
+# webkit-gtk is built with GCC_REQD=4.8 so explicitly prepare gcc48-libs too
+DEPENDS+=	gcc48-libs-[0-9]*:../../lang/gcc48-libs
 
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
@@ -97,8 +111,6 @@ DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
-DEPENDS+=	w3m-[0-9]*:../../www/w3m
-DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
 #  for sayaka (PHP twitter client)
 DEPENDS+=	${PHP_PKG_PREFIX}-pdo-[0-9]*:../../databases/php-pdo_sqlite
