@@ -130,7 +130,7 @@ DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
 
 # RESTRICTED packages (NO_BIN_ON_FTP etc.)
 #  These binary packages should be excluded on rsync xfers
-DEPENDS+=	adobe-flash-plugin11-[0-9]*:../../multimedia/adobe-flash-plugin11
+DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
