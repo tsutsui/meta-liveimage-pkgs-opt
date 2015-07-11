@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20150406
+REVISION=	20150705
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -9,6 +9,9 @@ DISTFILES=	# empty
 
 MAINTAINER=	tsutsui@NetBSD.org
 COMMENT=	Meta-package of optional binaries for the teokure live image
+
+META_PACKAGE=	yes
+.include "../../mk/bsd.prefs.mk"
 
 # multimedia
 DEPENDS+=	gnash-[0-9]*:../../multimedia/gnash
@@ -29,6 +32,9 @@ DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc
 # wnn
 DEPENDS+=	ja-FreeWnn-lib-[0-9]*:../../inputmethod/ja-freewnn-lib
 DEPENDS+=	ja-FreeWnn-server-[0-9]*:../../inputmethod/ja-freewnn-server
+# canna
+DEPENDS+=	Canna-lib-[0-9]*:../../inputmethod/canna-lib
+DEPENDS+=	Canna-[0-9]*:../../inputmethod/canna
 
 # wm
 DEPENDS+=	awesome-[0-9]*:../../wm/awesome
@@ -61,6 +67,7 @@ DEPENDS+=	sudo-[0-9]*:../../security/sudo
 # tools
 DEPENDS+=	nkf-[0-9]*:../../converters/nkf
 DEPENDS+=	cdrtools-[0-9]*:../../sysutils/cdrtools
+DEPENDS+=	mtools-[0-9]*:../../sysutils/mtools
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
@@ -82,15 +89,19 @@ DEPENDS+=	dillo-[0-9]*:../../www/dillo
 DEPENDS+=	midori-[0-9]*:../../www/midori
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
 # webkit-gtk is built with GCC_REQD=4.8 so explicitly prepare gcc48-libs too
+.if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
 DEPENDS+=	gcc48-libs-[0-9]*:../../lang/gcc48-libs
+.endif
 
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
 
-# for onscripter game archives
+# archivers
 DEPENDS+=	lhasa-[0-9]*:../../archivers/lhasa
+DEPENDS+=	unrar-[0-9]*:../../archivers/unrar
 DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
+DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
 # for xm6i
 DEPENDS+=	wxGTK28-[0-9]*:../../x11/wxGTK28
@@ -108,6 +119,7 @@ DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
+DEPENDS+=	${RUBY_PKGPREFIX}-gnome2-[0-9]*:../../meta-pkgs/ruby-gnome2
 
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
@@ -134,8 +146,6 @@ DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
-
-META_PACKAGE=	yes
 
 .include "../../lang/php/phpversion.mk"
 .include "../../lang/python/pyversion.mk"
