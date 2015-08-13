@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20150705
+REVISION=	20150813
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -47,6 +47,7 @@ DEPENDS+=	jisx0213fonts-[0-9]*:../../fonts/jisx0213fonts
 DEPENDS+=	ipaexfont-[0-9]*:../../fonts/ipaexfont
 DEPENDS+=	freefont-ttf-[0-9]*:../../fonts/freefont-ttf
 DEPENDS+=	takao-fonts-ttf-[0-9]*:../../fonts/takao-fonts-ttf
+DEPENDS+=	koruri-ttf-[0-9]*:../../fonts/koruri-ttf
 # for ricty
 DEPENDS+=	inconsolata-ttf-[0-9]*:../../fonts/inconsolata-ttf
 DEPENDS+=	migu-ttf-[0-9]*:../../fonts/migu-ttf
@@ -104,7 +105,10 @@ DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
 # for xm6i
-DEPENDS+=	wxGTK28-[0-9]*:../../x11/wxGTK28
+# XXX wxGTK30 on NetBSD/i386 7.0 spins during build
+.if empty(MACHINE_PLATFORM:MNetBSD-*-i386)
+DEPENDS+=	wxGTK30-[0-9]*:../../x11/wxGTK30
+.endif
 
 # emulators
 DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
@@ -124,6 +128,8 @@ DEPENDS+=	${RUBY_PKGPREFIX}-gnome2-[0-9]*:../../meta-pkgs/ruby-gnome2
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
+#  for mikutterm plugin
+DEPENDS+=	${RUBY_PKGPREFIX}-readline-[0-9]*:../../devel/ruby-readline
 #  for sayaka (PHP twitter client)
 DEPENDS+=	${PHP_PKG_PREFIX}-pdo-[0-9]*:../../databases/php-pdo_sqlite
 DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
@@ -146,6 +152,7 @@ DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
+DEPENDS+=	ms-ttf-[0-9]*:../../fonts/ms-ttf
 
 .include "../../lang/php/phpversion.mk"
 .include "../../lang/python/pyversion.mk"
