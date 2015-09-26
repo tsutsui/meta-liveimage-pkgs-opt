@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20150813
+REVISION=	20150926
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -144,7 +144,11 @@ DEPENDS+=	${PYPKGPREFIX}-sphinx-[0-9]*:../../textproc/py-sphinx
 DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 
 # office
-DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
+.if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
+DEPENDS+=	libreoffice43-[0-9]*:../../misc/libreoffice43
+.else
+DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
+.endif
 
 # RESTRICTED packages (NO_BIN_ON_FTP etc.)
 #  These binary packages should be excluded on rsync xfers
