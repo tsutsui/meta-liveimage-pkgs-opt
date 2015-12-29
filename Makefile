@@ -63,6 +63,7 @@ DEPENDS+=	mercurial-[0-9]*:../../devel/mercurial
 # pkgtools
 DEPENDS+=	pkgdiff-[0-9]*:../../pkgtools/pkgdiff
 DEPENDS+=	pkglint-[0-9]*:../../pkgtools/pkglint
+#DEPENDS+=	pkglint4-[0-9]*:../../pkgtools/pkglint4
 DEPENDS+=	pkg_rolling-replace-[0-9]*:../../pkgtools/pkg_rolling-replace
 
 # admin
