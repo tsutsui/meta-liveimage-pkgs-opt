@@ -35,6 +35,9 @@ DEPENDS+=	ja-FreeWnn-server-[0-9]*:../../inputmethod/ja-freewnn-server
 # canna
 DEPENDS+=	Canna-lib-[0-9]*:../../inputmethod/canna-lib
 DEPENDS+=	Canna-[0-9]*:../../inputmethod/canna
+DEPENDS+=	Canna-canuum-[0-9]*:../../inputmethod/canna-canuum
+# kinput2
+DEPENDS+=	kinput2-[0-9]*:../../inputmethod/kinput2
 
 # wm
 DEPENDS+=	awesome-[0-9]*:../../wm/awesome
