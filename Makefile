@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20150926
+REVISION=	20151229
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -105,10 +105,7 @@ DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
 # for xm6i
-# XXX wxGTK30 on NetBSD/i386 7.0 spins during build
-.if empty(MACHINE_PLATFORM:MNetBSD-*-i386)
 DEPENDS+=	wxGTK30-[0-9]*:../../x11/wxGTK30
-.endif
 
 # emulators
 DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
