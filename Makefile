@@ -142,7 +142,7 @@ DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 
 # office
 .if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
-DEPENDS+=	libreoffice43-[0-9]*:../../misc/libreoffice43
+DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
 .else
 DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
 .endif
