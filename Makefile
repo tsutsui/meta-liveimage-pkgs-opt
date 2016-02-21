@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20151229
+REVISION=	20160221
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -131,10 +131,16 @@ DEPENDS+=	sl-[0-9]*:../../games/sl
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
 #  for mikutterm plugin
 DEPENDS+=	${RUBY_PKGPREFIX}-readline-[0-9]*:../../devel/ruby-readline
-#  for sayaka (PHP twitter client)
-DEPENDS+=	${PHP_PKG_PREFIX}-pdo-[0-9]*:../../databases/php-pdo_sqlite
+#  for PHP sayaka (twitter client)
+DEPENDS+=	${PHP_PKG_PREFIX}-mbstring-[0-9]*:../../converters/php-mbstring
+DEPENDS+=	${PHP_PKG_PREFIX}-pdo-[0-9]*:../../databases/php-pdo
+DEPENDS+=	${PHP_PKG_PREFIX}-pdo_sqlite-[0-9]*:../../databases/php-pdo_sqlite
+DEPENDS+=	${PHP_PKG_PREFIX}-pcntl-[0-9]*:../../devel/php-pcntl
 DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
 DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
+#  for vala sayaka (twitter client)
+DEPENDS+=	vala-[0-9]*:../../lang/vala
+DEPENDS+=	glib-networking-[0-9]*:../../net/glib-networking
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince
