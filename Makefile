@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20160221
+REVISION=	20160409
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -14,7 +14,6 @@ META_PACKAGE=	yes
 .include "../../mk/bsd.prefs.mk"
 
 # multimedia
-DEPENDS+=	gnash-[0-9]*:../../multimedia/gnash
 DEPENDS+=	alsa-utils-[0-9]*:../../audio/alsa-utils
 DEPENDS+=	alsa-plugins-oss-[0-9]*:../../audio/alsa-plugins-oss
 DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
