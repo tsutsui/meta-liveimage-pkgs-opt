@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20160409
+REVISION=	20160424
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -137,9 +137,8 @@ DEPENDS+=	${PHP_PKG_PREFIX}-pdo_sqlite-[0-9]*:../../databases/php-pdo_sqlite
 DEPENDS+=	${PHP_PKG_PREFIX}-pcntl-[0-9]*:../../devel/php-pcntl
 DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
 DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
-#  for vala sayaka (twitter client)
-DEPENDS+=	vala-[0-9]*:../../lang/vala
-DEPENDS+=	glib-networking-[0-9]*:../../net/glib-networking
+# vala sayaka (twitter client)
+DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince
