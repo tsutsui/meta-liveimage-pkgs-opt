@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20160424
+REVISION=	20160525
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -96,6 +96,9 @@ DEPENDS+=	w3m-[0-9]*:../../www/w3m
 .if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
 DEPENDS+=	gcc48-libs-[0-9]*:../../lang/gcc48-libs
 .endif
+#  H264 might require gst ffmpeg plugin
+DEPENDS+=	gst-plugins1-libav-[0-9]*:../../multimedia/gst-plugins1-libav
+DEPENDS+=	gst-plugins1-good-[0-9]*:../../multimedia/gst-plugins1-good
 
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
