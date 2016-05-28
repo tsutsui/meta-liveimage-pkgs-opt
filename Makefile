@@ -16,6 +16,7 @@ META_PACKAGE=	yes
 # multimedia
 DEPENDS+=	alsa-utils-[0-9]*:../../audio/alsa-utils
 DEPENDS+=	alsa-plugins-oss-[0-9]*:../../audio/alsa-plugins-oss
+DEPENDS+=	alsa-plugins-pulse-[0-9]*:../../audio/alsa-plugins-pulse
 DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 DEPENDS+=	lame-[0-9]*:../../audio/lame
 
