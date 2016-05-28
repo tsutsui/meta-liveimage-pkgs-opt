@@ -73,6 +73,7 @@ DEPENDS+=	sudo-[0-9]*:../../security/sudo
 DEPENDS+=	nkf-[0-9]*:../../converters/nkf
 DEPENDS+=	cdrtools-[0-9]*:../../sysutils/cdrtools
 DEPENDS+=	mtools-[0-9]*:../../sysutils/mtools
+DEPENDS+=	smartmontools-[0-9]*:../../sysutils/smartmontools
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
