@@ -83,11 +83,20 @@ DEPENDS+=	nano-[0-9]*:../../editors/nano
 DEPENDS+=	vim-[0-9]*:../../editors/vim
 
 # network
+DEPENDS+=	apache-[0-9]*:../../www/apache24
 DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	rsync-[0-9]*:../../net/rsync
 DEPENDS+=	samba-[0-9]*:../../net/samba
 DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
+
+# mail
+DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
+DEPENDS+=	cyrus-sasl-[0-9]*:../../security/cyrus-sasl
+DEPENDS+=	cy2-crammd5-[0-9]*:../../security/cy2-crammd5
+DEPENDS+=	cy2-digestmd5-[0-9]*:../../security/cy2-digestmd5
+DEPENDS+=	cy2-login-[0-9]*:../../security/cy2-login
+DEPENDS+=	cy2-plain-[0-9]*:../../security/cy2-plain
 
 # browser
 DEPENDS+=	webkit-gtk-[0-9]*:../../www/webkit-gtk
