@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20160525
+REVISION=	20161231
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -51,6 +51,7 @@ DEPENDS+=	ipaexfont-[0-9]*:../../fonts/ipaexfont
 DEPENDS+=	freefont-ttf-[0-9]*:../../fonts/freefont-ttf
 DEPENDS+=	takao-fonts-ttf-[0-9]*:../../fonts/takao-fonts-ttf
 DEPENDS+=	koruri-ttf-[0-9]*:../../fonts/koruri-ttf
+DEPENDS+=	misaki-fonts-[0-9]*:../../fonts/misaki-fonts
 # for ricty
 DEPENDS+=	inconsolata-ttf-[0-9]*:../../fonts/inconsolata-ttf
 DEPENDS+=	migu-ttf-[0-9]*:../../fonts/migu-ttf
@@ -74,6 +75,7 @@ DEPENDS+=	nkf-[0-9]*:../../converters/nkf
 DEPENDS+=	cdrtools-[0-9]*:../../sysutils/cdrtools
 DEPENDS+=	mtools-[0-9]*:../../sysutils/mtools
 DEPENDS+=	smartmontools-[0-9]*:../../sysutils/smartmontools
+DEPENDS+=	meld-[0-9]*:../../devel/meld
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
@@ -89,6 +91,8 @@ DEPENDS+=	rsync-[0-9]*:../../net/rsync
 DEPENDS+=	samba-[0-9]*:../../net/samba
 DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
+DEPENDS+=	youtube-dl-[0-9]*:../../net/youtube-dl
+DEPENDS+=	nicovideo-dl-[0-9]*:../../net/nicovideo-dl
 
 # mail
 DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
@@ -97,6 +101,7 @@ DEPENDS+=	cy2-crammd5-[0-9]*:../../security/cy2-crammd5
 DEPENDS+=	cy2-digestmd5-[0-9]*:../../security/cy2-digestmd5
 DEPENDS+=	cy2-login-[0-9]*:../../security/cy2-login
 DEPENDS+=	cy2-plain-[0-9]*:../../security/cy2-plain
+DEPENDS+=	fetchmail-[0-9]*:../../mail/fetchmail
 
 # browser
 DEPENDS+=	webkit-gtk-[0-9]*:../../www/webkit-gtk
@@ -114,6 +119,7 @@ DEPENDS+=	gst-plugins1-good-[0-9]*:../../multimedia/gst-plugins1-good
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
+#DEPENDS+=	PC6001VX-[0-9]*:../../emulators/PC6001VX
 
 # archivers
 DEPENDS+=	lhasa-[0-9]*:../../archivers/lhasa
@@ -173,6 +179,7 @@ DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
 #  These binary packages should be excluded on rsync xfers
 DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
+DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
 DEPENDS+=	ms-ttf-[0-9]*:../../fonts/ms-ttf
