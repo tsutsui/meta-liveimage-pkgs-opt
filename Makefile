@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20161231
+REVISION=	20170708
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -119,7 +119,7 @@ DEPENDS+=	gst-plugins1-good-[0-9]*:../../multimedia/gst-plugins1-good
 # for demonstration
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
-#DEPENDS+=	PC6001VX-[0-9]*:../../emulators/PC6001VX
+DEPENDS+=	PC6001VX-[0-9]*:../../emulators/PC6001VX
 
 # archivers
 DEPENDS+=	lhasa-[0-9]*:../../archivers/lhasa
@@ -150,6 +150,7 @@ DEPENDS+=	sl-[0-9]*:../../games/sl
 DEPENDS+=	aview-[0-9]*:../../graphics/aview
 #  for mikutterm plugin
 DEPENDS+=	${RUBY_PKGPREFIX}-readline-[0-9]*:../../devel/ruby-readline
+DEPENDS+=	${RUBY_PKGPREFIX}-slack-api-[0-9]*:../../net/ruby-slack-api
 #  for PHP sayaka (twitter client)
 DEPENDS+=	${PHP_PKG_PREFIX}-mbstring-[0-9]*:../../converters/php-mbstring
 DEPENDS+=	${PHP_PKG_PREFIX}-pdo-[0-9]*:../../databases/php-pdo
@@ -177,7 +178,8 @@ DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
 
 # RESTRICTED packages (NO_BIN_ON_FTP etc.)
 #  These binary packages should be excluded on rsync xfers
-DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
+#DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
+DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
