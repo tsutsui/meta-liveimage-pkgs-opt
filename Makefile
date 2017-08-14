@@ -163,7 +163,7 @@ DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
 DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
 
 # pdf viewers
-DEPENDS+=	evince-[0-9]*:../../print/evince
+DEPENDS+=	evince3-[0-9]*:../../print/evince3
 DEPENDS+=	epdfview-[0-9]*:../../print/epdfview
 
 # documents
