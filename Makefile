@@ -82,6 +82,7 @@ DEPENDS+=	bvi-[0-9]*:../../editors/bvi
 DEPENDS+=	gedit-[0-9]*:../../editors/gedit
 DEPENDS+=	leafpad-[0-9]*:../../editors/leafpad
 DEPENDS+=	nano-[0-9]*:../../editors/nano
+DEPENDS+=	poedit-[0-9]*:../../editors/poedit
 DEPENDS+=	vim-[0-9]*:../../editors/vim
 
 # network
