@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20170708
+REVISION=	20171029
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -107,7 +107,7 @@ DEPENDS+=	fetchmail-[0-9]*:../../mail/fetchmail
 # browser
 DEPENDS+=	webkit-gtk-[0-9]*:../../www/webkit-gtk
 DEPENDS+=	dillo-[0-9]*:../../www/dillo
-DEPENDS+=	midori-[0-9]*:../../www/midori
+#DEPENDS+=	midori-[0-9]*:../../www/midori
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
 # webkit-gtk is built with GCC_REQD=4.8 so explicitly prepare gcc48-libs too
 .if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
@@ -142,7 +142,7 @@ DEPENDS+=	xli-[0-9]*:../../graphics/xli
 DEPENDS+=	libsixel-[0-9]*:../../graphics/libsixel
 DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
-DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
+#DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 DEPENDS+=	${RUBY_PKGPREFIX}-gnome2-[0-9]*:../../meta-pkgs/ruby-gnome2
 
