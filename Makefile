@@ -38,6 +38,8 @@ DEPENDS+=	Canna-[0-9]*:../../inputmethod/canna
 DEPENDS+=	Canna-canuum-[0-9]*:../../inputmethod/canna-canuum
 # kinput2
 DEPENDS+=	kinput2-[0-9]*:../../inputmethod/kinput2
+# tegaki
+DEPENDS+=	tegaki-zinnia-japanese-[0-9]*:../../inputmethod/tegaki-zinnia-japanese
 
 # wm
 DEPENDS+=	awesome-[0-9]*:../../wm/awesome
