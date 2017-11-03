@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20171029
+REVISION=	20171103
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -54,6 +54,7 @@ DEPENDS+=	freefont-ttf-[0-9]*:../../fonts/freefont-ttf
 DEPENDS+=	takao-fonts-ttf-[0-9]*:../../fonts/takao-fonts-ttf
 DEPENDS+=	koruri-ttf-[0-9]*:../../fonts/koruri-ttf
 DEPENDS+=	misaki-fonts-[0-9]*:../../fonts/misaki-fonts
+DEPENDS+=	noto-emoji-ttf-[0-9]*:../../fonts/noto-emoji-ttf
 # for ricty
 DEPENDS+=	inconsolata-ttf-[0-9]*:../../fonts/inconsolata-ttf
 DEPENDS+=	migu-ttf-[0-9]*:../../fonts/migu-ttf
