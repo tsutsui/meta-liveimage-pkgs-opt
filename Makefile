@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20171103
+REVISION=	20171230
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -85,7 +85,7 @@ DEPENDS+=	bvi-[0-9]*:../../editors/bvi
 DEPENDS+=	gedit-[0-9]*:../../editors/gedit
 DEPENDS+=	leafpad-[0-9]*:../../editors/leafpad
 DEPENDS+=	nano-[0-9]*:../../editors/nano
-DEPENDS+=	poedit-[0-9]*:../../editors/poedit
+#DEPENDS+=	poedit-[0-9]*:../../editors/poedit
 DEPENDS+=	vim-[0-9]*:../../editors/vim
 
 # network
