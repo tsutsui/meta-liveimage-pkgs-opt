@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20171230
+REVISION=	20180404
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -166,12 +166,13 @@ DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
 DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
 
 # pdf viewers
-DEPENDS+=	evince3-[0-9]*:../../print/evince3
+DEPENDS+=	evince-[0-9]*:../../print/evince3
 DEPENDS+=	epdfview-[0-9]*:../../print/epdfview
 
 # documents
 DEPENDS+=	${PYPKGPREFIX}-sphinx-[0-9]*:../../textproc/py-sphinx
 DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
+DEPENDS+=	netbsd-www-[0-9]*:../../meta-pkgs/netbsd-www
 
 # office
 .if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
