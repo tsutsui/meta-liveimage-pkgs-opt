@@ -79,6 +79,7 @@ DEPENDS+=	cdrtools-[0-9]*:../../sysutils/cdrtools
 DEPENDS+=	mtools-[0-9]*:../../sysutils/mtools
 DEPENDS+=	smartmontools-[0-9]*:../../sysutils/smartmontools
 DEPENDS+=	meld-[0-9]*:../../devel/meld
+DEPENDS+=	arandr-[0-9]*:../../x11/arandr
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
