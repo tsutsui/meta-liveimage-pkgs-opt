@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20180404
+REVISION=	20180707
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -18,7 +18,9 @@ DEPENDS+=	alsa-utils-[0-9]*:../../audio/alsa-utils
 DEPENDS+=	alsa-plugins-oss-[0-9]*:../../audio/alsa-plugins-oss
 DEPENDS+=	alsa-plugins-pulse-[0-9]*:../../audio/alsa-plugins-pulse
 DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
+DEPENDS+=	mpg123-pulse-[0-9]*:../../audio/mpg123-pulse
 DEPENDS+=	lame-[0-9]*:../../audio/lame
+DEPENDS+=	timidity-[0-9]*:../../audio/timidity
 
 # inputmethod
 #  anthy
@@ -55,6 +57,7 @@ DEPENDS+=	takao-fonts-ttf-[0-9]*:../../fonts/takao-fonts-ttf
 DEPENDS+=	koruri-ttf-[0-9]*:../../fonts/koruri-ttf
 DEPENDS+=	misaki-fonts-[0-9]*:../../fonts/misaki-fonts
 DEPENDS+=	noto-emoji-ttf-[0-9]*:../../fonts/noto-emoji-ttf
+DEPENDS+=	mozilla-fonts-[0-9]*:../../fonts/mozilla-fonts
 # for ricty
 DEPENDS+=	inconsolata-ttf-[0-9]*:../../fonts/inconsolata-ttf
 DEPENDS+=	migu-ttf-[0-9]*:../../fonts/migu-ttf
@@ -149,6 +152,8 @@ DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 #DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 DEPENDS+=	${RUBY_PKGPREFIX}-gnome2-[0-9]*:../../meta-pkgs/ruby-gnome2
+DEPENDS+=	gnome-icon-theme-extras-[0-9]*:../../graphics/gnome-icon-theme-extras
+DEPENDS+=	gnome-icon-theme-symbolic-[0-9]*:../../graphics/gnome-icon-theme-symbolic
 
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
