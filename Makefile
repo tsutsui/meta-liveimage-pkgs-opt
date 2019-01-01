@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20180707
+REVISION=	20190102
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -21,6 +21,7 @@ DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 DEPENDS+=	mpg123-pulse-[0-9]*:../../audio/mpg123-pulse
 DEPENDS+=	lame-[0-9]*:../../audio/lame
 DEPENDS+=	timidity-[0-9]*:../../audio/timidity
+DEPENDS+=	sox-[0-9]*:../../audio/sox
 
 # inputmethod
 #  anthy
@@ -116,10 +117,6 @@ DEPENDS+=	webkit-gtk-[0-9]*:../../www/webkit-gtk
 DEPENDS+=	dillo-[0-9]*:../../www/dillo
 #DEPENDS+=	midori-[0-9]*:../../www/midori
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
-# webkit-gtk is built with GCC_REQD=4.8 so explicitly prepare gcc48-libs too
-.if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
-DEPENDS+=	gcc48-libs-[0-9]*:../../lang/gcc48-libs
-.endif
 #  H264 might require gst ffmpeg plugin
 DEPENDS+=	gst-plugins1-libav-[0-9]*:../../multimedia/gst-plugins1-libav
 DEPENDS+=	gst-plugins1-good-[0-9]*:../../multimedia/gst-plugins1-good
