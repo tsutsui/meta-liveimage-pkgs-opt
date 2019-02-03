@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20190102
+REVISION=	20190203
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -167,6 +167,9 @@ DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
 DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
 # vala sayaka (twitter client)
 DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
+# for nanotodon
+DEPENDS+=	ncursesw-[0-9]*:../../devel/ncursesw
+DEPENDS+=	json-c-[0-9]*:../../textproc/json-c
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince3
@@ -178,11 +181,7 @@ DEPENDS+=	${RUBY_PKGPREFIX}-rabbit-[0-9]*:../../graphics/rabbit
 DEPENDS+=	netbsd-www-[0-9]*:../../meta-pkgs/netbsd-www
 
 # office
-.if (${OPSYS} == "NetBSD" && !empty(OS_VERSION:M6.*))
-DEPENDS+=	libreoffice4-[0-9]*:../../misc/libreoffice4
-.else
 DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
-.endif
 
 # RESTRICTED packages (NO_BIN_ON_FTP etc.)
 #  These binary packages should be excluded on rsync xfers
