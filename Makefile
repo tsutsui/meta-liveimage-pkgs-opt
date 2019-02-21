@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20190203
+REVISION=	20190221
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -182,6 +182,9 @@ DEPENDS+=	netbsd-www-[0-9]*:../../meta-pkgs/netbsd-www
 
 # office
 DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
+
+# linux binary emulation
+DEPENDS+=	suse-[0-9]*:../../meta-pkgs/suse131
 
 # RESTRICTED packages (NO_BIN_ON_FTP etc.)
 #  These binary packages should be excluded on rsync xfers
