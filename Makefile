@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20190221
+REVISION=	20190407
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -102,6 +102,7 @@ DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
 DEPENDS+=	youtube-dl-[0-9]*:../../net/youtube-dl
 DEPENDS+=	nicovideo-dl-[0-9]*:../../net/nicovideo-dl
+DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
 
 # mail
 DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
