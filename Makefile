@@ -22,6 +22,7 @@ DEPENDS+=	mpg123-pulse-[0-9]*:../../audio/mpg123-pulse
 DEPENDS+=	lame-[0-9]*:../../audio/lame
 DEPENDS+=	timidity-[0-9]*:../../audio/timidity
 DEPENDS+=	sox-[0-9]*:../../audio/sox
+DEPENDS+=	mpv-[0-9]*:../../multimedia/mpv
 
 # inputmethod
 #  anthy
