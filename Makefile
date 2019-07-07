@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20190407
+REVISION=	20190707
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -91,7 +91,7 @@ DEPENDS+=	bvi-[0-9]*:../../editors/bvi
 DEPENDS+=	gedit-[0-9]*:../../editors/gedit
 DEPENDS+=	leafpad-[0-9]*:../../editors/leafpad
 DEPENDS+=	nano-[0-9]*:../../editors/nano
-#DEPENDS+=	poedit-[0-9]*:../../editors/poedit
+DEPENDS+=	poedit-[0-9]*:../../editors/poedit
 DEPENDS+=	vim-[0-9]*:../../editors/vim
 
 # network
@@ -117,7 +117,7 @@ DEPENDS+=	fetchmail-[0-9]*:../../mail/fetchmail
 # browser
 DEPENDS+=	webkit-gtk-[0-9]*:../../www/webkit-gtk
 DEPENDS+=	dillo-[0-9]*:../../www/dillo
-#DEPENDS+=	midori-[0-9]*:../../www/midori
+DEPENDS+=	midori-[0-9]*:../../www/midori
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
 #  H264 might require gst ffmpeg plugin
 DEPENDS+=	gst-plugins1-libav-[0-9]*:../../multimedia/gst-plugins1-libav
