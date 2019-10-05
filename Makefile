@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20190707
+REVISION=	20191005
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -89,7 +89,7 @@ DEPENDS+=	conky-[0-9]*:../../sysutils/conky
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
-DEPENDS+=	gedit-[0-9]*:../../editors/gedit
+DEPENDS+=	gedit-[0-9]*:../../editors/gedit3
 DEPENDS+=	leafpad-[0-9]*:../../editors/leafpad
 DEPENDS+=	nano-[0-9]*:../../editors/nano
 DEPENDS+=	poedit-[0-9]*:../../editors/poedit
@@ -151,7 +151,7 @@ DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 #DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
-DEPENDS+=	${RUBY_PKGPREFIX}-gnome2-[0-9]*:../../meta-pkgs/ruby-gnome2
+DEPENDS+=	${RUBY_PKGPREFIX}-gnome-[0-9]*:../../meta-pkgs/ruby-gnome
 DEPENDS+=	gnome-icon-theme-extras-[0-9]*:../../graphics/gnome-icon-theme-extras
 DEPENDS+=	gnome-icon-theme-symbolic-[0-9]*:../../graphics/gnome-icon-theme-symbolic
 
