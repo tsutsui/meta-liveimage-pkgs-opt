@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20191005
+REVISION=	20191007
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -128,6 +128,7 @@ DEPENDS+=	gst-plugins1-good-[0-9]*:../../multimedia/gst-plugins1-good
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
 DEPENDS+=	PC6001VX-[0-9]*:../../emulators/PC6001VX
+DEPENDS+=	xm8-[0-9]*:../../emulators/xm8
 
 # archivers
 DEPENDS+=	lhasa-[0-9]*:../../archivers/lhasa
@@ -196,7 +197,6 @@ DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
-DEPENDS+=	ricty-ttf-[0-9]*:../../fonts/ricty-ttf
 DEPENDS+=	ms-ttf-[0-9]*:../../fonts/ms-ttf
 
 .include "../../lang/php/phpversion.mk"
