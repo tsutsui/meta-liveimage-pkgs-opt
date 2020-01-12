@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20191007
+REVISION=	20200111
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -23,6 +23,9 @@ DEPENDS+=	lame-[0-9]*:../../audio/lame
 DEPENDS+=	timidity-[0-9]*:../../audio/timidity
 DEPENDS+=	sox-[0-9]*:../../audio/sox
 DEPENDS+=	mpv-[0-9]*:../../multimedia/mpv
+DEPENDS+=	gmplayer-[0-9]*:../../multimedia/gmplayer
+DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
+DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder
 
 # inputmethod
 #  anthy
@@ -89,7 +92,7 @@ DEPENDS+=	conky-[0-9]*:../../sysutils/conky
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
-DEPENDS+=	gedit-[0-9]*:../../editors/gedit3
+DEPENDS+=	gedit-[0-9]*:../../editors/gedit
 DEPENDS+=	leafpad-[0-9]*:../../editors/leafpad
 DEPENDS+=	nano-[0-9]*:../../editors/nano
 DEPENDS+=	poedit-[0-9]*:../../editors/poedit
@@ -125,10 +128,14 @@ DEPENDS+=	gst-plugins1-libav-[0-9]*:../../multimedia/gst-plugins1-libav
 DEPENDS+=	gst-plugins1-good-[0-9]*:../../multimedia/gst-plugins1-good
 
 # for demonstration
+DEPENDS+=	xengine-[0-9]*:../../benchmark/xengine
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
 DEPENDS+=	PC6001VX-[0-9]*:../../emulators/PC6001VX
 DEPENDS+=	xm8-[0-9]*:../../emulators/xm8
+DEPENDS+=	xmris-[0-9]*:../../games/xmris
+DEPENDS+=	xlockmore-[0-9]*:../../x11/xlockmore
+DEPENDS+=	xearth-[0-9]*:../../x11/xearth
 
 # archivers
 DEPENDS+=	lhasa-[0-9]*:../../archivers/lhasa
@@ -189,15 +196,15 @@ DEPENDS+=	libreoffice-[0-9]*:../../misc/libreoffice
 
 # linux binary emulation
 DEPENDS+=	suse-[0-9]*:../../meta-pkgs/suse131
+DEPENDS+=	libreoffice6-bin-[0-9]*:../../misc/libreoffice6-bin
 
 # RESTRICTED packages (NO_BIN_ON_FTP etc.)
 #  These binary packages should be excluded on rsync xfers
 #DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
 DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
-DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
-DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	ms-ttf-[0-9]*:../../fonts/ms-ttf
+DEPENDS+=	xbat-[0-9]*:../../games/xbat
 
 .include "../../lang/php/phpversion.mk"
 .include "../../lang/python/pyversion.mk"
