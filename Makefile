@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20200111
+REVISION=	20200220
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -128,11 +128,13 @@ DEPENDS+=	gst-plugins1-libav-[0-9]*:../../multimedia/gst-plugins1-libav
 DEPENDS+=	gst-plugins1-good-[0-9]*:../../multimedia/gst-plugins1-good
 
 # for demonstration
-DEPENDS+=	xengine-[0-9]*:../../benchmark/xengine
+DEPENDS+=	xengine-[0-9]*:../../benchmarks/xengine
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
 DEPENDS+=	PC6001VX-[0-9]*:../../emulators/PC6001VX
 DEPENDS+=	xm8-[0-9]*:../../emulators/xm8
+DEPENDS+=	xclannad-[0-9]*:../../games/xclannad
+DEPENDS+=	xkanon-[0-9]*:../../games/xkanon
 DEPENDS+=	xmris-[0-9]*:../../games/xmris
 DEPENDS+=	xlockmore-[0-9]*:../../x11/xlockmore
 DEPENDS+=	xearth-[0-9]*:../../x11/xearth
@@ -176,11 +178,10 @@ DEPENDS+=	${PHP_PKG_PREFIX}-pdo_sqlite-[0-9]*:../../databases/php-pdo_sqlite
 DEPENDS+=	${PHP_PKG_PREFIX}-pcntl-[0-9]*:../../devel/php-pcntl
 DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
 DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
-# vala sayaka (twitter client)
+
+# SNS clients
 DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
-# for nanotodon
-DEPENDS+=	ncursesw-[0-9]*:../../devel/ncursesw
-DEPENDS+=	json-c-[0-9]*:../../textproc/json-c
+DEPENDS+=	nanotodon-[0-9]*:../../net/nanotodon
 
 # pdf viewers
 DEPENDS+=	evince-[0-9]*:../../print/evince3
