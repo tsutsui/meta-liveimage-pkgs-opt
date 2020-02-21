@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20200220
+REVISION=	20200221
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -180,6 +180,7 @@ DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
 DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
 
 # SNS clients
+DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
 DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
 DEPENDS+=	nanotodon-[0-9]*:../../net/nanotodon
 
