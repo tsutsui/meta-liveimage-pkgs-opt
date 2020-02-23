@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20200221
+REVISION=	20200223
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -136,6 +136,7 @@ DEPENDS+=	xm8-[0-9]*:../../emulators/xm8
 DEPENDS+=	xclannad-[0-9]*:../../games/xclannad
 DEPENDS+=	xkanon-[0-9]*:../../games/xkanon
 DEPENDS+=	xmris-[0-9]*:../../games/xmris
+DEPENDS+=	freeglut-[0-9]*:../../graphics/freeglut
 DEPENDS+=	xlockmore-[0-9]*:../../x11/xlockmore
 DEPENDS+=	xearth-[0-9]*:../../x11/xearth
 
