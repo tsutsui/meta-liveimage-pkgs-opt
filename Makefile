@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20200223
+REVISION=	20200428
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -119,7 +119,8 @@ DEPENDS+=	cy2-plain-[0-9]*:../../security/cy2-plain
 DEPENDS+=	fetchmail-[0-9]*:../../mail/fetchmail
 
 # browser
-DEPENDS+=	webkit-gtk-[0-9]*:../../www/webkit-gtk
+DEPENDS+=	firefox68-[0-9]*:../../www/firefox68
+DEPENDS+=	firefox68-l10n-[0-9]*:../../www/firefox68-l10n
 DEPENDS+=	dillo-[0-9]*:../../www/dillo
 DEPENDS+=	midori-[0-9]*:../../www/midori
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
