@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20200428
+REVISION=	20210104
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -147,7 +147,7 @@ DEPENDS+=	unrar-[0-9]*:../../archivers/unrar
 DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
-# for xm6i
+# for xm6i and nono
 DEPENDS+=	wxGTK30-[0-9]*:../../x11/wxGTK30
 
 # emulators
@@ -166,6 +166,7 @@ DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 DEPENDS+=	${RUBY_PKGPREFIX}-gnome-[0-9]*:../../meta-pkgs/ruby-gnome
 DEPENDS+=	gnome-icon-theme-extras-[0-9]*:../../graphics/gnome-icon-theme-extras
 DEPENDS+=	gnome-icon-theme-symbolic-[0-9]*:../../graphics/gnome-icon-theme-symbolic
+DEPENDS+=	raleigh-reloaded-[0-9]*:../../graphics/raleigh-reloaded
 
 # for text console demo
 DEPENDS+=	sl-[0-9]*:../../games/sl
@@ -204,8 +205,7 @@ DEPENDS+=	libreoffice6-bin-[0-9]*:../../misc/libreoffice6-bin
 
 # RESTRICTED packages (NO_BIN_ON_FTP etc.)
 #  These binary packages should be excluded on rsync xfers
-#DEPENDS+=	adobe-flash-plugin-[0-9]*:../../multimedia/adobe-flash-plugin11
-DEPENDS+=	adobe-flash-player-[0-9]*:../../multimedia/adobe-flash-player
+DEPENDS+=	nono-[0-9]*:../../emulators/nono
 DEPENDS+=	xv-[0-9]*:../../graphics/xv
 DEPENDS+=	ms-ttf-[0-9]*:../../fonts/ms-ttf
 DEPENDS+=	xbat-[0-9]*:../../games/xbat
