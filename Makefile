@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20210104
+REVISION=	20221230
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -188,7 +188,7 @@ DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
 DEPENDS+=	nanotodon-[0-9]*:../../net/nanotodon
 
 # pdf viewers
-DEPENDS+=	evince-[0-9]*:../../print/evince3
+DEPENDS+=	evince-[0-9]*:../../print/evince
 DEPENDS+=	epdfview-[0-9]*:../../print/epdfview
 
 # documents
