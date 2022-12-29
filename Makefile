@@ -34,7 +34,6 @@ DEPENDS+=	anthy-elisp-[0-9]*:../../inputmethod/anthy-elisp
 DEPENDS+=	ibus-anthy-[0-9]*:../../inputmethod/ibus-anthy
 # uim
 DEPENDS+=	uim-[0-9]*:../../inputmethod/uim
-DEPENDS+=	uim-elisp-[0-9]*:../../inputmethod/uim-elisp
 DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc
 # wnn
 DEPENDS+=	ja-FreeWnn-lib-[0-9]*:../../inputmethod/ja-freewnn-lib
@@ -119,8 +118,6 @@ DEPENDS+=	cy2-plain-[0-9]*:../../security/cy2-plain
 DEPENDS+=	fetchmail-[0-9]*:../../mail/fetchmail
 
 # browser
-DEPENDS+=	firefox68-[0-9]*:../../www/firefox68
-DEPENDS+=	firefox68-l10n-[0-9]*:../../www/firefox68-l10n
 DEPENDS+=	dillo-[0-9]*:../../www/dillo
 DEPENDS+=	midori-[0-9]*:../../www/midori
 DEPENDS+=	w3m-[0-9]*:../../www/w3m
