@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20221230
+REVISION=	20230702
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -67,6 +67,7 @@ DEPENDS+=	inconsolata-ttf-[0-9]*:../../fonts/inconsolata-ttf
 DEPENDS+=	migu-ttf-[0-9]*:../../fonts/migu-ttf
 
 # scm
+DEPENDS+=	git-perlscripts-[0-9]*:../../devel/git-perlscripts
 DEPENDS+=	subversion-base-[0-9]*:../../devel/subversion-base
 DEPENDS+=	fossil-[0-9]*:../../devel/fossil
 DEPENDS+=	mercurial-[0-9]*:../../devel/mercurial
