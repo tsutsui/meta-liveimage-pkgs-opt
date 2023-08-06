@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20230702
+REVISION=	20230806
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -172,16 +172,8 @@ DEPENDS+=	aview-[0-9]*:../../graphics/aview
 #  for mikutterm plugin
 DEPENDS+=	${RUBY_PKGPREFIX}-readline-[0-9]*:../../devel/ruby-readline
 DEPENDS+=	${RUBY_PKGPREFIX}-slack-api-[0-9]*:../../net/ruby-slack-api
-#  for PHP sayaka (twitter client)
-DEPENDS+=	${PHP_PKG_PREFIX}-mbstring-[0-9]*:../../converters/php-mbstring
-DEPENDS+=	${PHP_PKG_PREFIX}-pdo-[0-9]*:../../databases/php-pdo
-DEPENDS+=	${PHP_PKG_PREFIX}-pdo_sqlite-[0-9]*:../../databases/php-pdo_sqlite
-DEPENDS+=	${PHP_PKG_PREFIX}-pcntl-[0-9]*:../../devel/php-pcntl
-DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
-DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
 
 # SNS clients
-DEPENDS+=	${RUBY_PKGPREFIX}-tw-[0-9]*:../../net/ruby-tw
 DEPENDS+=	sayaka-[0-9]*:../../net/sayaka
 DEPENDS+=	nanotodon-[0-9]*:../../net/nanotodon
 
