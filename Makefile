@@ -106,7 +106,7 @@ DEPENDS+=	samba-[0-9]*:../../net/samba
 DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
 DEPENDS+=	youtube-dl-[0-9]*:../../net/youtube-dl
-DEPENDS+=	nicovideo-dl-[0-9]*:../../net/nicovideo-dl
+DEPENDS+=	yt-dlp-[0-9]*:../../net/yt-dlp
 DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
 
 # mail
