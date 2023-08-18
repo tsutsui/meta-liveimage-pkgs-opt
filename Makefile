@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20230806
+REVISION=	20230819
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -160,6 +160,7 @@ DEPENDS+=	libsixel-[0-9]*:../../graphics/libsixel
 DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 #DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
+DEPENDS+=	geeqie-[0-9]*:../../graphics/geeqie
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 DEPENDS+=	${RUBY_PKGPREFIX}-gnome-[0-9]*:../../meta-pkgs/ruby-gnome
 DEPENDS+=	gnome-icon-theme-extras-[0-9]*:../../graphics/gnome-icon-theme-extras
