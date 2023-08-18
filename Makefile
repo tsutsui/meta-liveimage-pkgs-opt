@@ -161,6 +161,7 @@ DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 #DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
 DEPENDS+=	geeqie-[0-9]*:../../graphics/geeqie
+DEPENDS+=	apngasm-[0-9]*:../../graphics/apngasm
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 DEPENDS+=	${RUBY_PKGPREFIX}-gnome-[0-9]*:../../meta-pkgs/ruby-gnome
 DEPENDS+=	gnome-icon-theme-extras-[0-9]*:../../graphics/gnome-icon-theme-extras
