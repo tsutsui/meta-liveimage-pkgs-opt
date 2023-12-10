@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20230819
+REVISION=	20231210
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -102,7 +102,7 @@ DEPENDS+=	vim-[0-9]*:../../editors/vim
 DEPENDS+=	apache-[0-9]*:../../www/apache24
 DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	rsync-[0-9]*:../../net/rsync
-DEPENDS+=	samba-[0-9]*:../../net/samba
+DEPENDS+=	samba4-[0-9]*:../../net/samba4
 DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
 DEPENDS+=	youtube-dl-[0-9]*:../../net/youtube-dl
