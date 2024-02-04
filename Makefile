@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20231210
+REVISION=	20240205
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -146,18 +146,19 @@ DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
 # for xm6i and nono
-DEPENDS+=	wxGTK30-[0-9]*:../../x11/wxGTK30
+DEPENDS+=	wxGTK32-[0-9]*:../../x11/wxGTK32
 
 # emulators
 DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
 DEPENDS+=	gxemul-[0-9]*:../../emulators/gxemul
 DEPENDS+=	tme-[0-9]*:../../emulators/tme
-DEPENDS+=	simh-[0-9]*:../../emulators/simh
+DEPENDS+=	open-simh-[0-9]*:../../emulators/open-simh
 
 # graphics
 DEPENDS+=	xli-[0-9]*:../../graphics/xli
 DEPENDS+=	libsixel-[0-9]*:../../graphics/libsixel
 DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
+DEPENDS+=	sxiv-[0-9]*:../../graphics/sxiv
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 #DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
 DEPENDS+=	geeqie-[0-9]*:../../graphics/geeqie
