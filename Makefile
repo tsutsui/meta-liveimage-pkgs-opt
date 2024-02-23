@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20240205
+REVISION=	20240223
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -20,6 +20,7 @@ DEPENDS+=	alsa-plugins-pulse-[0-9]*:../../audio/alsa-plugins-pulse
 DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 DEPENDS+=	mpg123-pulse-[0-9]*:../../audio/mpg123-pulse
 DEPENDS+=	lame-[0-9]*:../../audio/lame
+DEPENDS+=	flac123-[0-9]*:../../audio/flac123
 DEPENDS+=	timidity-[0-9]*:../../audio/timidity
 DEPENDS+=	sox-[0-9]*:../../audio/sox
 DEPENDS+=	mpv-[0-9]*:../../multimedia/mpv
@@ -102,7 +103,7 @@ DEPENDS+=	vim-[0-9]*:../../editors/vim
 DEPENDS+=	apache-[0-9]*:../../www/apache24
 DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	rsync-[0-9]*:../../net/rsync
-DEPENDS+=	samba4-[0-9]*:../../net/samba4
+DEPENDS+=	samba-[0-9]*:../../net/samba4
 DEPENDS+=	wget-[0-9]*:../../net/wget
 DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
 DEPENDS+=	youtube-dl-[0-9]*:../../net/youtube-dl
@@ -159,6 +160,8 @@ DEPENDS+=	xli-[0-9]*:../../graphics/xli
 DEPENDS+=	libsixel-[0-9]*:../../graphics/libsixel
 DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 DEPENDS+=	sxiv-[0-9]*:../../graphics/sxiv
+DEPENDS+=	nsxiv-[0-9]*:../../graphics/nsxiv
+DEPENDS+=	gifsicle-[0-9]*:../../graphics/gifsicle
 DEPENDS+=	gimp-[0-9]*:../../graphics/gimp
 #DEPENDS+=	shotwell-[0-9]*:../../graphics/shotwell
 DEPENDS+=	geeqie-[0-9]*:../../graphics/geeqie
