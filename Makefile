@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20240223
+REVISION=	20240428
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -35,7 +35,11 @@ DEPENDS+=	anthy-elisp-[0-9]*:../../inputmethod/anthy-elisp
 DEPENDS+=	ibus-anthy-[0-9]*:../../inputmethod/ibus-anthy
 # uim
 DEPENDS+=	uim-[0-9]*:../../inputmethod/uim
+.if ${MACHINE_ARCH} == "x86_64"
 DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc
+.else
+DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc226
+.endif
 # wnn
 DEPENDS+=	ja-FreeWnn-lib-[0-9]*:../../inputmethod/ja-freewnn-lib
 DEPENDS+=	ja-FreeWnn-server-[0-9]*:../../inputmethod/ja-freewnn-server
