@@ -94,6 +94,7 @@ DEPENDS+=	meld-[0-9]*:../../devel/meld
 DEPENDS+=	arandr-[0-9]*:../../x11/arandr
 DEPENDS+=	conky-[0-9]*:../../sysutils/conky
 DEPENDS+=	hfsutils-[0-9]*:../../sysutils/hfsutils
+DEPENDS+=	xbattbar-[0-9]*:../../sysutils/xbattbar
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
