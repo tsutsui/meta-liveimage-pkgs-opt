@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20240428
+REVISION=	20250810
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -31,7 +31,6 @@ DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder
 # inputmethod
 #  anthy
 DEPENDS+=	anthy-[0-9]*:../../inputmethod/anthy
-DEPENDS+=	anthy-elisp-[0-9]*:../../inputmethod/anthy-elisp
 DEPENDS+=	ibus-anthy-[0-9]*:../../inputmethod/ibus-anthy
 # uim
 DEPENDS+=	uim-[0-9]*:../../inputmethod/uim
@@ -94,6 +93,7 @@ DEPENDS+=	smartmontools-[0-9]*:../../sysutils/smartmontools
 DEPENDS+=	meld-[0-9]*:../../devel/meld
 DEPENDS+=	arandr-[0-9]*:../../x11/arandr
 DEPENDS+=	conky-[0-9]*:../../sysutils/conky
+DEPENDS+=	hfsutils-[0-9]*:../../sysutils/hfsutils
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
@@ -136,6 +136,8 @@ DEPENDS+=	xengine-[0-9]*:../../benchmarks/xengine
 DEPENDS+=	xnp2-[0-9]*:../../emulators/xnp2
 DEPENDS+=	onscripter-[0-9]*:../../games/onscripter
 DEPENDS+=	PC6001VX-[0-9]*:../../emulators/PC6001VX
+DEPENDS+=	asl-[0-9]*:../../devel/asl
+DEPENDS+=	asl-doc-[0-9]*:../../devel/asl-doc
 DEPENDS+=	xm8-[0-9]*:../../emulators/xm8
 DEPENDS+=	xclannad-[0-9]*:../../games/xclannad
 DEPENDS+=	xkanon-[0-9]*:../../games/xkanon
