@@ -98,6 +98,7 @@ DEPENDS+=	conky-[0-9]*:../../sysutils/conky
 DEPENDS+=	hfsutils-[0-9]*:../../sysutils/hfsutils
 DEPENDS+=	xbattbar-[0-9]*:../../sysutils/xbattbar
 DEPENDS+=	galculator-[0-9]*:../../math/galculator
+DEPENDS+=	efivar-[0-9]*:../../devel/efivar
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
@@ -164,6 +165,7 @@ DEPENDS+=	qemu-[0-9]*:../../emulators/qemu
 DEPENDS+=	gxemul-[0-9]*:../../emulators/gxemul
 DEPENDS+=	tme-[0-9]*:../../emulators/tme
 DEPENDS+=	open-simh-[0-9]*:../../emulators/open-simh
+DEPENDS+=	fs-uae-[0-9]*:../../emulators/fs-uae
 
 # graphics
 DEPENDS+=	xli-[0-9]*:../../graphics/xli
