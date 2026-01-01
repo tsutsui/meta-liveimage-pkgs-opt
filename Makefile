@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20250810
+REVISION=	20260102
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -9,6 +9,12 @@ DISTFILES=	# empty
 
 MAINTAINER=	tsutsui@NetBSD.org
 COMMENT=	Meta-package of optional binaries for the teokure live image
+
+.if ${MACHINE_ARCH} == "x86_64"
+MOZC_VERSION=
+.else
+MOZC_VERSION=226
+.endif
 
 META_PACKAGE=	yes
 .include "../../mk/bsd.prefs.mk"
@@ -34,11 +40,7 @@ DEPENDS+=	anthy-[0-9]*:../../inputmethod/anthy
 DEPENDS+=	ibus-anthy-[0-9]*:../../inputmethod/ibus-anthy
 # uim
 DEPENDS+=	uim-[0-9]*:../../inputmethod/uim
-.if ${MACHINE_ARCH} == "x86_64"
-DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc
-.else
-DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc226
-.endif
+DEPENDS+=	uim-mozc-[0-9]*:../../inputmethod/uim-mozc${MOZC_VERSION}
 # wnn
 DEPENDS+=	ja-FreeWnn-lib-[0-9]*:../../inputmethod/ja-freewnn-lib
 DEPENDS+=	ja-FreeWnn-server-[0-9]*:../../inputmethod/ja-freewnn-server
