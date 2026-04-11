@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20260102
+REVISION=	20260411
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -99,6 +99,8 @@ DEPENDS+=	hfsutils-[0-9]*:../../sysutils/hfsutils
 DEPENDS+=	xbattbar-[0-9]*:../../sysutils/xbattbar
 DEPENDS+=	galculator-[0-9]*:../../math/galculator
 DEPENDS+=	efivar-[0-9]*:../../devel/efivar
+DEPENDS+=	vifm-[0-9]*:../../sysutils/vifm
+DEPENDS+=	libssh2-[0-9]*:../../security/libssh2
 
 # editors
 DEPENDS+=	bvi-[0-9]*:../../editors/bvi
