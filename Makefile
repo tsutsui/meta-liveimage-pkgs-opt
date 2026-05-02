@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-REVISION=	20260411
+REVISION=	20260430
 DISTNAME=	liveimage-pkgs-opt-${REVISION}
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
@@ -120,6 +120,7 @@ DEPENDS+=	wireshark-[0-9]*:../../net/wireshark
 DEPENDS+=	youtube-dl-[0-9]*:../../net/youtube-dl
 DEPENDS+=	yt-dlp-[0-9]*:../../net/yt-dlp
 DEPENDS+=	wpa_gui-[0-9]*:../../net/wpa_gui
+DEPENDS+=	${RUBY_PKGPREFIX}-webrick-[0-9]*:../../www/ruby-webrick
 
 # mail
 DEPENDS+=	sendmail-[0-9]*:../../mail/sendmail
